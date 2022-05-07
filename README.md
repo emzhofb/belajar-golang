@@ -1,1 +1,1 @@
-Belajar golang dari udemy
+Belajar golang dari Udemy
