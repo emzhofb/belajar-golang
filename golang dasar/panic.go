@@ -3,6 +3,11 @@ package main
 import "fmt"
 
 func endApp() {
+	message := recover()
+	if message != nil {
+		fmt.Println("something went wrong", message)
+	}
+
 	fmt.Println("aplikasi selesai")
 }
 
@@ -15,6 +20,6 @@ func runApp(error bool) {
 }
 
 func main() {
-	runApp(false)
-	// runApp(true)
+	// runApp(false)
+	runApp(true)
 }
